@@ -184,7 +184,7 @@ final List<Gem> gems = [
     name: "Diamond",
     description: "A precious gem known for its hardness and brilliance.",
     longdescription:
-        "Diamonds are among the most valuable gemstones, known for their brilliance and durability. They form deep within the Earth's mantle under extreme heat and pressure.",
+        "Diamonds are among the most valuable gemstones, known for their brilliance and durability. They form deep within the Earth's mantle under extreme heat and pressure over millions of years. Their unmatched hardness makes them ideal for both jewelry and industrial applications. Diamonds symbolize love and eternity, making them the most popular choice for engagement rings. The presence of different elements during formation gives diamonds their variety of colors, including rare hues like pink, blue, and even green. Natural diamonds are highly sought after, but lab-grown diamonds have become a sustainable alternative. In ancient times, diamonds were believed to possess mystical powers and were worn by warriors for protection in battle. Today, diamonds remain the ultimate symbol of prestige and commitment.",
     imageUrl: "assets/images/diamond2.png",
     keyCharacteristics: [
       "Hardness: Scores 10 on the Mohs scale, making it the hardest natural substance",
@@ -202,7 +202,7 @@ final List<Gem> gems = [
     name: "Ruby",
     description: "A red gemstone, prized for its deep color and rarity.",
     longdescription:
-        "Rubies are known for their deep red color and are among the four precious gemstones, along with diamonds, sapphires, and emeralds.",
+        "Rubies are among the most treasured gemstones, admired for their deep red hue and striking brilliance. Composed of the mineral corundum, rubies get their color from trace amounts of chromium. The finest rubies exhibit a rich, vibrant red often referred to as 'pigeon blood.' These gems have been worn by royalty and warriors throughout history, believed to grant protection and power to their wearers. Rubies are also known as a symbol of passion and love, making them a favored gift in romantic jewelry. Some of the world's most valuable rubies have been found in Myanmar, known for producing high-quality stones. In various cultures, rubies are thought to bring good fortune and were historically set in the crowns of kings and queens to ensure prosperity and safety.",
     imageUrl: "assets/images/ruby.png",
     keyCharacteristics: [
       "Hardness: Scores 9 on the Mohs scale, making it highly durable",
@@ -218,7 +218,7 @@ final List<Gem> gems = [
     name: "Sapphire",
     description: "A blue gemstone known for its durability and beauty.",
     longdescription:
-        "Sapphires are made from the mineral corundum and are admired for their deep blue color, strength, and symbolism.",
+        "Sapphires, made from corundum, are cherished for their deep blue color and impressive durability. While blue is the most recognized shade, sapphires also come in pink, yellow, and green. This gemstone has long been associated with wisdom, royalty, and divine favor. It is said that wearing a sapphire can bring protection from envy and harm. One of the most famous sapphires is the blue sapphire engagement ring of Princess Diana, now worn by Catherine, Duchess of Cambridge. Due to their hardness, sapphires are used not only in jewelry but also in watch crystals and electronics. In medieval times, sapphires were believed to shield their wearers from poisoning and were often worn by priests and rulers as a sign of wisdom and purity.",
     imageUrl: "assets/images/sapphire.png",
     keyCharacteristics: [
       "Hardness: Scores 9 on the Mohs scale",
@@ -234,7 +234,7 @@ final List<Gem> gems = [
     name: "Emerald",
     description: "A green gemstone associated with wealth and royalty.",
     longdescription:
-        "Emeralds belong to the beryl family and are valued for their deep green color.",
+        "Emeralds, a variety of the mineral beryl, are known for their striking green color caused by traces of chromium and vanadium. The finest emeralds have a deep, vivid green with a slight bluish undertone. Historically, emeralds were favored by rulers such as Cleopatra, who adorned herself with these gemstones. They are often associated with prosperity, wisdom, and rebirth. Emeralds are rarer than diamonds, making high-quality specimens extremely valuable. Despite their relative hardness, emeralds tend to have natural inclusions, known as 'jardin,' which give them unique character and authenticity. Ancient cultures considered emeralds a source of eternal youth, and they were even believed to grant the ability to foresee the future.",
     imageUrl: "assets/images/emerald.png",
     keyCharacteristics: [
       "Hardness: Scores 7.5 to 8 on the Mohs scale",
@@ -251,7 +251,7 @@ final List<Gem> gems = [
     description:
         "A gemstone that displays a play of color, highly valued in jewelry.",
     longdescription:
-        "Opals are unique for their ability to diffract light, producing a beautiful play of colors.",
+        "Opals are unique gemstones known for their ability to diffract light, creating a beautiful display of shifting colors known as play-of-color. This optical effect makes each opal unique, with hues ranging from fiery reds and oranges to calming blues and greens. Opals are composed of hydrated silica and have been prized for centuries for their mystical and ethereal appearance. They are often associated with creativity, inspiration, and emotional balance. Despite their lower hardness, opals are cherished for their one-of-a-kind patterns, which make them stand out in the world of gemstones.",
     imageUrl: "assets/images/opal.png",
     keyCharacteristics: [
       "Play-of-Color: Displays shifting colors including red, blue, green, and more",
@@ -268,7 +268,7 @@ final List<Gem> gems = [
     description:
         "A purple gemstone associated with clarity of mind and spirituality.",
     longdescription:
-        "Amethyst is a variety of quartz known for its deep purple color.",
+        "Amethyst, a variety of quartz, is cherished for its vibrant purple hues, which range from soft lavender to deep violet. The coloration results from iron and irradiation during formation. Historically, amethyst was regarded as a stone of clarity and was believed to prevent intoxication—hence the Greek word 'amethystos,' meaning 'not drunken.' In modern times, it remains associated with spiritual wisdom, protection, and inner peace. Its affordability and beauty make it one of the most popular gemstones in jewelry worldwide.",
     imageUrl: "assets/images/amethyst.png",
     keyCharacteristics: [
       "Hardness: Scores 7 on the Mohs scale",
@@ -285,7 +285,7 @@ final List<Gem> gems = [
     description:
         "A gemstone found in a range of colors, symbolizing strength and love.",
     longdescription:
-        "Topaz comes in various colors, including yellow, blue, and pink, and is known for its strength and brilliance.",
+        "Topaz is a silicate mineral that comes in a variety of colors, including yellow, blue, pink, and the rare imperial orange. It is often associated with strength, confidence, and good fortune. The name 'topaz' is believed to have originated from the Sanskrit word 'tapas,' meaning 'fire.' Due to its brilliance and clarity, topaz has been a popular gemstone for centuries. In folklore, it was thought to provide protection against evil and promote emotional balance.",
     imageUrl: "assets/images/topaz.png",
     keyCharacteristics: [
       "Hardness: Scores 8 on the Mohs scale",
@@ -302,7 +302,7 @@ final List<Gem> gems = [
     description:
         "A gemstone typically red in color, representing passion and protection.",
     longdescription:
-        "Garnets are silicate minerals often found in deep red hues.",
+        "Garnets are a group of silicate minerals known for their rich, deep red color, although they can also be found in green, orange, and even blue hues. The name 'garnet' comes from the Latin word 'granatus,' meaning 'seed,' as the crystals resemble pomegranate seeds. Garnets have been used in jewelry since ancient times and were often worn as protective amulets by warriors heading into battle. Today, they are believed to enhance passion, creativity, and energy in those who wear them.",
     imageUrl: "assets/images/garnet.png",
     keyCharacteristics: [
       "Hardness: Scores 6.5 to 7.5 on the Mohs scale",
@@ -319,7 +319,7 @@ final List<Gem> gems = [
     description:
         "A blue-green gemstone known for its unique color and ancient use.",
     longdescription:
-        "Turquoise is valued for its distinct blue-green color and historical significance.",
+        "Turquoise is a mineral with a striking blue-green hue caused by the presence of copper and iron. Prized for centuries, turquoise has been used by various cultures, from the ancient Egyptians to Native American tribes. It is often associated with protection, good fortune, and spiritual well-being. Many believe turquoise has healing properties and the ability to ward off negative energy. The stone's unique matrix patterns make each piece distinctive and treasured among collectors.",
     imageUrl: "assets/images/turquoise.png",
     keyCharacteristics: [
       "Hardness: Scores 5 to 6 on the Mohs scale",
@@ -336,7 +336,7 @@ final List<Gem> gems = [
     description:
         "A blue gemstone, often associated with the ocean and tranquility.",
     longdescription:
-        "Aquamarine is a blue variety of the mineral beryl, often linked to the sea.",
+        "Aquamarine, a blue variety of the mineral beryl, is named after the Latin words 'aqua' (water) and 'marina' (sea). Its soothing blue hues resemble the clear ocean waters, and it has long been associated with calmness, harmony, and courage. Ancient sailors believed that aquamarine protected them from storms and ensured a safe voyage. The finest aquamarines exhibit a rich, deep blue color and are commonly used in elegant jewelry. As the birthstone for March, aquamarine is cherished for its serene energy and striking appearance.",
     imageUrl: "assets/images/aquamarine.png",
     keyCharacteristics: [
       "Hardness: Scores 7.5 to 8 on the Mohs scale",

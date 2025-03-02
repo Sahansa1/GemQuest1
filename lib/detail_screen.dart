@@ -338,7 +338,7 @@ class _DetailScreenState extends State<DetailScreen> {
           children: [
             // Tap-to-Zoom Image
             GestureDetector(
-              onTap: () => _openImageFullScreen(context, widget.gem.imageUrl),
+              onTap: () => _showImageDialog(context),
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: ClipRRect(
@@ -369,7 +369,15 @@ class _DetailScreenState extends State<DetailScreen> {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 8),
-
+// Key Characteristics
+            Text(
+              widget.gem.description,
+              style: TextStyle(
+                fontSize: isLargeScreen ? 18 : 16,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 8),
             // Expandable Description
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -484,54 +492,67 @@ class _DetailScreenState extends State<DetailScreen> {
     );
   }
 
-  // Fullscreen Image Zoom with Blurred Background
-  void _openImageFullScreen(BuildContext context, String imageUrl) {
+  // void _openImageFullScreen(BuildContext context, String imageUrl) {
+  //   Navigator.push(
+  //     context,
+  //     PageRouteBuilder(
+  //       opaque: false,
+  //       pageBuilder: (context, _, __) => Scaffold(
+  //         backgroundColor: Colors.black.withOpacity(0.8), // Dark overlay
+  //         body: Stack(
+  //           children: [
+  //             // Zoomable & Rotatable Image
+  //             Center(
+  //               child: Container(
+  //                 width: double.infinity,
+  //                 height: double.infinity,
+  //                 child: PhotoView(
+  //                   imageProvider: AssetImage(imageUrl),
+  //                   backgroundDecoration: BoxDecoration(
+  //                     color: Colors.transparent,
+  //                   ),
+  //                   minScale:
+  //                       PhotoViewComputedScale.contained, // Minimum zoom level
+  //                   maxScale:
+  //                       PhotoViewComputedScale.covered * 2.5, // Max zoom level
+  //                   enableRotation: true, // Allows image rotation
+  //                   gestureDetectorBehavior: HitTestBehavior
+  //                       .translucent, // Ensures touch gestures work
+  //                 ),
+  //               ),
+  //             ),
+
+  //             // Close Button
+  //             Positioned(
+  //               top: 40,
+  //               right: 20,
+  //               child: IconButton(
+  //                 icon: Icon(Icons.close, color: Colors.white, size: 30),
+  //                 onPressed: () => Navigator.pop(context),
+  //               ),
+  //             ),
+  //           ],
+  //         ),
+  //       ),
+  //       transitionsBuilder: (context, animation, secondaryAnimation, child) {
+  //         return FadeTransition(
+  //           opacity: animation,
+  //           child: child,
+  //         );
+  //       },
+  //     ),
+  //   );
+  // }
+
+  // Fullscreen image preview dialog
+  void _showImageDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => Stack(
-        children: [
-          // Blurred Background Effect
-          BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-            child: Container(
-              color: Colors.black.withOpacity(0.2), // Light transparent overlay
-            ),
-          ),
-
-          // Close Button
-          Positioned(
-            top: 30,
-            right: 20,
-            child: IconButton(
-              icon: Icon(Icons.close, color: Colors.white, size: 30),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-            ),
-          ),
-
-          // Zoomable & Movable Image
-          Center(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: Container(
-                width: MediaQuery.of(context).size.width * 0.9,
-                height: MediaQuery.of(context).size.height * 0.7,
-                child: PhotoView(
-                  imageProvider: AssetImage(imageUrl),
-                  backgroundDecoration: BoxDecoration(
-                    color: Colors.transparent, // No black background
-                  ),
-                  minScale: PhotoViewComputedScale.contained *
-                      0.8, // Allows natural zoom-out
-                  maxScale:
-                      PhotoViewComputedScale.covered * 2.5, // Allows zoom-in
-                  enableRotation: true, // Allows rotating the image
-                ),
-              ),
-            ),
-          ),
-        ],
+      builder: (context) => Dialog(
+        backgroundColor: Colors.transparent,
+        child: InteractiveViewer(
+          child: Image.asset(widget.gem.imageUrl),
+        ),
       ),
     );
   }
