@@ -30,28 +30,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-<<<<<<< HEAD
   firebase_core: ^2.8.0
   firebase_auth: ^4.4.0
-=======
-  lottie: ^2.2.0
   photo_view: ^0.14.0 # Add this package
   flutter_map: ^8.1.0
   latlong2: ^0.9.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
->>>>>>> 2b8a01301e69451d29a43d75769a55ea9bd99888
   cupertino_icons: ^1.0.6
   lottie: ^2.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-    
-
-
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
