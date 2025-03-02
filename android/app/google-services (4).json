@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "321235046752",
+    "project_id": "gemquest-fb895",
+    "storage_bucket": "gemquest-fb895.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321235046752:android:d7dca46e8fa9b5f0720e05",
+        "android_client_info": {
+          "package_name": "com.example.untitled4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC4lw9oSn6fHO0NXQ2zyf-HA_AikYMfUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

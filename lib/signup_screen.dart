@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // Navigate to HomeScreen after successful signup
+import 'package:firebase_auth/firebase_auth.dart';
+import 'home_screen.dart';
 
 class SignupScreen extends StatefulWidget {
   @override
@@ -12,16 +13,25 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController = TextEditingController();
 
-  void signUp() {
+  Future<void> signUp() async {
     if (_formKey.currentState!.validate()) {
-      // TODO: Implement your sign-up logic here
-      // For example, using Firebase Auth or your custom API
-
-      // On successful sign-up, navigate to HomeScreen:
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (_) => HomeScreen()),
-      );
+      try {
+        UserCredential userCredential = await FirebaseAuth.instance
+            .createUserWithEmailAndPassword(
+          email: emailController.text.trim(),
+          password: passwordController.text,
+        );
+        // Navigate to HomeScreen on successful sign-up
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (_) => HomeScreen()),
+        );
+      } on FirebaseAuthException catch (e) {
+        // Display an error message
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(e.message ?? 'Sign Up failed')),
+        );
+      }
     }
   }
 
