@@ -85,6 +85,7 @@ flutter:
     - assets/images/logo_screen.mp4
     - assets/animations/answer_correct_anim.json
     - assets/animations/asnwer_wrong_anim.json
+    - assets/images/background1.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

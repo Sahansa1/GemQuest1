@@ -290,7 +290,7 @@ class _EncyclopediaScreenState extends State<EncyclopediaScreen> {
         slivers: [
           SliverAppBar(
             pinned: true,
-            expandedHeight: 200.0,
+            expandedHeight: 150.0,
             flexibleSpace: FlexibleSpaceBar(
               title: Text("Gem Encyclopedia"),
               background: Image.asset(
