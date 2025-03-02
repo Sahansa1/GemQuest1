@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'encyclopedia_screen.dart';
 import 'quiz_screen.dart';
 import 'quiz_difficulty_screen.dart';
+import 'gemstone_map_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -37,7 +38,8 @@ class HomeScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(isLargeScreen ? 250 : 150, 50),
                   ),
-                  child: Text('Encyclopedia', style: TextStyle(fontSize: isLargeScreen ? 20 : 16)),
+                  child: Text('Encyclopedia',
+                      style: TextStyle(fontSize: isLargeScreen ? 20 : 16)),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -52,13 +54,31 @@ class HomeScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(isLargeScreen ? 250 : 150, 50),
                   ),
-                  child: Text('Take the Quiz', style: TextStyle(fontSize: isLargeScreen ? 20 : 16)),
+                  child: Text('Take the Quiz',
+                      style: TextStyle(fontSize: isLargeScreen ? 20 : 16)),
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) =>  QuizDifficultyScreen()),
-
+                          builder: (context) => QuizDifficultyScreen()),
+                    );
+                  },
+                ),
+                SizedBox(height: 20),
+                // New Button: Go to Location Map
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: Size(isLargeScreen ? 250 : 150, 50),
+                  ),
+                  child: Text('View Gemstone Locations',
+                      style: TextStyle(fontSize: isLargeScreen ? 20 : 16)),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            GemstoneMapScreen(), // Navigate to the Map Screen
+                      ),
                     );
                   },
                 ),

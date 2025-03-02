@@ -369,7 +369,8 @@ class _DetailScreenState extends State<DetailScreen> {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 8),
-// Key Characteristics
+
+            // Key Characteristics
             Text(
               widget.gem.description,
               style: TextStyle(
@@ -378,6 +379,7 @@ class _DetailScreenState extends State<DetailScreen> {
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 8),
+
             // Expandable Description
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0),
