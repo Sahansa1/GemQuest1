@@ -282,7 +282,6 @@
 //     );
 //   }
 // }
-
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
@@ -485,7 +484,7 @@ class _DetailScreenState extends State<DetailScreen> {
     );
   }
 
-  // Fullscreen Image Zoom Function with Blurred Background
+  // Fullscreen Image Zoom with Blurred Background
   void _openImageFullScreen(BuildContext context, String imageUrl) {
     showDialog(
       context: context,
@@ -511,20 +510,23 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
           ),
 
-          // Zoomable Image
+          // Zoomable & Movable Image
           Center(
             child: ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Container(
                 width: MediaQuery.of(context).size.width * 0.9,
-                height: MediaQuery.of(context).size.height * 0.6,
+                height: MediaQuery.of(context).size.height * 0.7,
                 child: PhotoView(
                   imageProvider: AssetImage(imageUrl),
                   backgroundDecoration: BoxDecoration(
                     color: Colors.transparent, // No black background
                   ),
-                  minScale: PhotoViewComputedScale.contained,
-                  maxScale: PhotoViewComputedScale.covered * 2.5,
+                  minScale: PhotoViewComputedScale.contained *
+                      0.8, // Allows natural zoom-out
+                  maxScale:
+                      PhotoViewComputedScale.covered * 2.5, // Allows zoom-in
+                  enableRotation: true, // Allows rotating the image
                 ),
               ),
             ),
