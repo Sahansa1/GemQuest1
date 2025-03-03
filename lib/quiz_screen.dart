@@ -577,7 +577,9 @@ class _QuizScreenState extends State<QuizScreen> {
         context,
         MaterialPageRoute(
           builder: (context) => ResultScreen(
-              score: score, totalQuestions: selectedQuestions.length),
+              category: widget.category,
+              score: score,
+              totalQuestions: selectedQuestions.length),
         ),
       );
     }
@@ -597,7 +599,7 @@ class _QuizScreenState extends State<QuizScreen> {
         children: [
           Positioned.fill(
             child: Image.asset(
-              'assets/images/questions_backg.jpg',
+              'assets/images/background1.png',
               fit: BoxFit.cover,
             ),
           ),
