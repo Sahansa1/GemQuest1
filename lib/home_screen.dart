@@ -22,6 +22,7 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 2, 30, 45),
           titleTextStyle: TextStyle(
               color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
+          iconTheme: IconThemeData(color: Colors.white),
         ),
         drawer: _buildDrawer(context, user), // Navigation Drawer
         body: Center(
@@ -91,7 +92,7 @@ class HomeScreen extends StatelessWidget {
     return Container(
       height: 250, // Bigger profile section
       width: double.infinity,
-      color: Colors.blueGrey, // Background color
+      color: const Color.fromARGB(255, 2, 30, 45), // Background color
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -124,7 +125,7 @@ class HomeScreen extends StatelessWidget {
     return ListTile(
       leading: Icon(
         icon,
-        color: const Color.fromARGB(255, 255, 255, 255),
+        color: const Color.fromARGB(255, 2, 30, 45),
       ),
       title: Text(title,
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
