@@ -1,40 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'quiz_difficulty_screen.dart';
-
-// class QuizCategoryScreen extends StatelessWidget {
-//   final List<String> categories = [
-//     'Gem Identification and Properties',
-//     'Gem Cuts, Origins, and History',
-//     'Synthetic Gems, Treatments, and Care',
-//     'Final Round: Mixed Category'
-//   ];
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: Text('Select Category')),
-//       body: ListView.builder(
-//         itemCount: categories.length,
-//         itemBuilder: (context, index) {
-//           return ListTile(
-//             title: Text(categories[index]),
-//             trailing: Icon(Icons.arrow_forward),
-//             onTap: () {
-//               Navigator.push(
-//                 context,
-//                 MaterialPageRoute(
-//                   builder: (context) =>
-//                       QuizDifficultyScreen(category: categories[index]),
-//                 ),
-//               );
-//             },
-//           );
-//         },
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'quiz_difficulty_screen.dart';
 import 'background_wrapper.dart';
@@ -53,7 +16,12 @@ class QuizCategoryScreen extends StatelessWidget {
     var isLargeScreen = screenWidth > 600;
 
     return Scaffold(
-      appBar: AppBar(title: Text('Select Category')),
+      appBar: AppBar(
+        title: Text('Select Category'),
+        backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+        titleTextStyle: TextStyle(
+            color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
+      ),
       body: BackgroundWrapper(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
