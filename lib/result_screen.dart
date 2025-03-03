@@ -378,7 +378,12 @@ class ResultScreen extends StatelessWidget {
     _saveScore();
 
     return Scaffold(
-      appBar: AppBar(title: Text('Quiz Results')),
+      appBar: AppBar(
+        title: Text('Quiz Results'),
+        backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+        titleTextStyle: TextStyle(
+            color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
+      ),
       body: Center(
         child: Card(
           margin: EdgeInsets.all(16),

@@ -120,7 +120,9 @@ class QuizDifficultyScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Select Difficulty - $category'),
-        backgroundColor: const Color.fromARGB(255, 187, 187, 187),
+        backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+        titleTextStyle: TextStyle(
+            color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
       ),
       body: BackgroundWrapper(
         child: Center(

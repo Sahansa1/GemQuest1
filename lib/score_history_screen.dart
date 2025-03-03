@@ -9,7 +9,12 @@ class ScoreHistoryScreen extends StatelessWidget {
 
     if (user == null) {
       return Scaffold(
-        appBar: AppBar(title: const Text("Your Quiz History")),
+        appBar: AppBar(
+          title: const Text("Your Quiz History"),
+          backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+          titleTextStyle: TextStyle(
+              color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
+        ),
         body: Center(child: Text("You need to log in to view your scores.")),
       );
     }

@@ -597,7 +597,9 @@ class _GemstoneMapScreenState extends State<GemstoneMapScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gemstone Locations'),
-        backgroundColor: const Color.fromARGB(255, 187, 187, 187),
+        backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+        titleTextStyle: TextStyle(
+            color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back,
               color: Color.fromARGB(255, 0, 0, 0)), // Back icon

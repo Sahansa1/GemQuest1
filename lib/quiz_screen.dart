@@ -594,6 +594,9 @@ class _QuizScreenState extends State<QuizScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('${widget.category} - ${widget.difficulty}'),
+        backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+        titleTextStyle: TextStyle(
+            color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
       ),
       body: Stack(
         children: [

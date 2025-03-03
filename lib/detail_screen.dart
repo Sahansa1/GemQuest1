@@ -310,7 +310,9 @@ class _DetailScreenState extends State<DetailScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.gem.name),
-        backgroundColor: const Color.fromARGB(255, 187, 187, 187),
+        backgroundColor: const Color.fromARGB(255, 2, 30, 45),
+        titleTextStyle: TextStyle(
+            color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
         actions: [
           IconButton(
             icon: Icon(
