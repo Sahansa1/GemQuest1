@@ -34,7 +34,7 @@
 
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
-import 'quiz_difficulty_screen.dart';
+import 'quiz_category_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   final int score;
@@ -96,7 +96,7 @@ class ResultScreen extends StatelessWidget {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => QuizDifficultyScreen()),
+                              builder: (context) => QuizCategoryScreen()),
                         );
                       },
                       child: Text('Retake Quiz'),

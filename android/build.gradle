@@ -16,3 +16,10 @@ subprojects {
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
+
+dependencies {
+    classpath 'com.android.tools.build:gradle:7.3.1'
+    classpath 'com.google.gms:google-services:4.4.0' 
+}
+
+ext.kotlin_version = "1.8.10"

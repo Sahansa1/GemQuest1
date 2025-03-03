@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'encyclopedia_screen.dart';
 import 'quiz_screen.dart';
-import 'quiz_difficulty_screen.dart';
+import 'quiz_category_screen.dart';
 import 'gemstone_map_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => QuizDifficultyScreen()),
+                          builder: (context) => QuizCategoryScreen()),
                     );
                   },
                 ),
